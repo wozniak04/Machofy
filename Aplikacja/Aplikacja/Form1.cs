@@ -74,5 +74,10 @@ namespace Aplikacja
             button8.FlatStyle = FlatStyle.Flat;
             button8.FlatAppearance.BorderSize = 0;
         }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            tWyszukaj.Text = "";
+        }
     }
 }

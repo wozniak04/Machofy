@@ -33,7 +33,7 @@ namespace Aplikacja
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tWyszukaj = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@ namespace Aplikacja
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -98,16 +99,17 @@ namespace Aplikacja
             this.button1.Text = "ZALOGUJ";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // tWyszukaj
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(13, 13);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(320, 30);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "Wyszukaj";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tWyszukaj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tWyszukaj.Location = new System.Drawing.Point(13, 13);
+            this.tWyszukaj.Multiline = true;
+            this.tWyszukaj.Name = "tWyszukaj";
+            this.tWyszukaj.Size = new System.Drawing.Size(320, 30);
+            this.tWyszukaj.TabIndex = 5;
+            this.tWyszukaj.Text = "Wyszukaj";
+            this.tWyszukaj.Click += new System.EventHandler(this.textBox1_Click);
+            this.tWyszukaj.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -272,12 +274,21 @@ namespace Aplikacja
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // hScrollBar1
+            // 
+            this.hScrollBar1.Location = new System.Drawing.Point(62, 475);
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(271, 17);
+            this.hScrollBar1.TabIndex = 21;
+            this.hScrollBar1.Value = 100;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(384, 561);
+            this.Controls.Add(this.hScrollBar1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.pictureBox3);
@@ -290,7 +301,7 @@ namespace Aplikacja
             this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tWyszukaj);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
@@ -313,7 +324,7 @@ namespace Aplikacja
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tWyszukaj;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button4;
@@ -326,6 +337,7 @@ namespace Aplikacja
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.HScrollBar hScrollBar1;
     }
 }
 

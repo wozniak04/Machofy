@@ -122,5 +122,8 @@
   <ItemGroup>
     <None Include="Resources\serce2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Odtwarzacz\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
