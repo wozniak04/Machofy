@@ -37,6 +37,7 @@ namespace Aplikacja
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -47,7 +48,6 @@ namespace Aplikacja
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -129,9 +129,9 @@ namespace Aplikacja
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(78)))), ((int)(((byte)(78)))));
             this.label3.Location = new System.Drawing.Point(68, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 18);
+            this.label3.Size = new System.Drawing.Size(94, 18);
             this.label3.TabIndex = 15;
-            this.label3.Text = "jakas baba";
+            this.label3.Text = "Camila Cabello";
             // 
             // label4
             // 
@@ -143,6 +143,14 @@ namespace Aplikacja
             this.label4.Size = new System.Drawing.Size(48, 26);
             this.label4.TabIndex = 16;
             this.label4.Text = "2:54";
+            // 
+            // hScrollBar1
+            // 
+            this.hScrollBar1.Location = new System.Drawing.Point(62, 475);
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(271, 17);
+            this.hScrollBar1.TabIndex = 21;
+            this.hScrollBar1.Value = 100;
             // 
             // button8
             // 
@@ -191,6 +199,7 @@ namespace Aplikacja
             this.pictureBox4.Size = new System.Drawing.Size(391, 50);
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // button6
             // 
@@ -274,15 +283,7 @@ namespace Aplikacja
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // hScrollBar1
-            // 
-            this.hScrollBar1.Location = new System.Drawing.Point(62, 475);
-            this.hScrollBar1.Name = "hScrollBar1";
-            this.hScrollBar1.Size = new System.Drawing.Size(271, 17);
-            this.hScrollBar1.TabIndex = 21;
-            this.hScrollBar1.Value = 100;
-            // 
-            // Form1
+            // Aplikacja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -307,7 +308,7 @@ namespace Aplikacja
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Aplikacja";
             this.Text = "MachoFy";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

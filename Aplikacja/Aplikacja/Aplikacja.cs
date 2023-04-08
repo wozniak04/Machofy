@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Aplikacja
 {
@@ -78,6 +79,12 @@ namespace Aplikacja
         private void textBox1_Click(object sender, EventArgs e)
         {
             tWyszukaj.Text = "";
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            SoundPlayer splayer = new SoundPlayer("./musics/Havana.mp3");
+            splayer.Play();
         }
     }
 }
