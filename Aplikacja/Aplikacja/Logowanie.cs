@@ -20,8 +20,19 @@ namespace Aplikacja
         private void button1_Click(object sender, EventArgs e)
         {
 
+            
+            string haslo = BCrypt.Net.BCrypt.HashPassword(tHaslo.Text.ToString());
+            MessageBox.Show(BCrypt.Net.BCrypt.Verify("Qwerty1@3",haslo).ToString());
             button1.FlatStyle = FlatStyle.Flat;
             button1.FlatAppearance.BorderSize = 0;
+        }
+
+        private void btnRejestruj_Click(object sender, EventArgs e)
+        {
+            var okno = new Rejestracja();
+            this.Hide();
+            okno.ShowDialog();    
+            this.Close();
         }
     }
 }

@@ -31,7 +31,6 @@ namespace Aplikacja
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Aplikacja));
             this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tWyszukaj = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -70,19 +69,6 @@ namespace Aplikacja
             this.button2.Text = "ULUBIONE";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.label1.Font = new System.Drawing.Font("Impact", 13F);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.label1.Location = new System.Drawing.Point(12, 62);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 22);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Gość";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
@@ -109,7 +95,6 @@ namespace Aplikacja
             this.tWyszukaj.TabIndex = 5;
             this.tWyszukaj.Text = "Wyszukaj";
             this.tWyszukaj.Click += new System.EventHandler(this.textBox1_Click);
-            this.tWyszukaj.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -304,11 +289,11 @@ namespace Aplikacja
             this.Controls.Add(this.button3);
             this.Controls.Add(this.tWyszukaj);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Aplikacja";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MachoFy";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -323,7 +308,6 @@ namespace Aplikacja
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox tWyszukaj;
         private System.Windows.Forms.Button button3;

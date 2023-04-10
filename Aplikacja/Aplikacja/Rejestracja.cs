@@ -20,8 +20,26 @@ namespace Aplikacja
         private void button1_Click(object sender, EventArgs e)
         {
 
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.FlatAppearance.BorderSize = 0;
+            btnRejestruj.FlatStyle = FlatStyle.Flat;
+            btnRejestruj.FlatAppearance.BorderSize = 0;
+
+            if (tHaslo1.Text.ToString().Equals(tHaslo2.Text.ToString()))
+            {
+                var pol = new DataAcces();
+                string haslo = BCrypt.Net.BCrypt.HashPassword(tHaslo1.Text.ToString());
+                if(pol.Rejestracja(tEmail.Text, haslo))
+                {
+                    MessageBox.Show("Zarejestrowano pomyślnie");
+                    var okno = new Aplikacja(tEmail.Text.ToString());
+                    this.Hide();
+                    okno.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Rejestracja nie powiodła się");
+                }
+            }
         }
     }
 }

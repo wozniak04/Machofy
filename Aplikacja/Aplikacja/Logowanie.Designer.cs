@@ -29,21 +29,20 @@ namespace Aplikacja
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tHaslo = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnRejestruj = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tEmail
             // 
-            this.textBox1.Location = new System.Drawing.Point(142, 301);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.tEmail.Location = new System.Drawing.Point(128, 159);
+            this.tEmail.Name = "tEmail";
+            this.tEmail.Size = new System.Drawing.Size(174, 20);
+            this.tEmail.TabIndex = 1;
             // 
             // label1
             // 
@@ -51,11 +50,11 @@ namespace Aplikacja
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.label1.Font = new System.Drawing.Font("Impact", 11.25F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.label1.Location = new System.Drawing.Point(62, 302);
+            this.label1.Location = new System.Drawing.Point(76, 160);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 19);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Login:";
+            this.label1.Text = "Email:";
             // 
             // label2
             // 
@@ -63,25 +62,25 @@ namespace Aplikacja
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.label2.Font = new System.Drawing.Font("Impact", 11.25F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.label2.Location = new System.Drawing.Point(62, 369);
+            this.label2.Location = new System.Drawing.Point(75, 230);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "Hasło:";
             // 
-            // textBox2
+            // tHaslo
             // 
-            this.textBox2.Location = new System.Drawing.Point(142, 371);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.tHaslo.Location = new System.Drawing.Point(128, 229);
+            this.tHaslo.Name = "tHaslo";
+            this.tHaslo.Size = new System.Drawing.Size(174, 20);
+            this.tHaslo.TabIndex = 4;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.button1.Font = new System.Drawing.Font("Impact", 11.25F);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.button1.Location = new System.Drawing.Point(142, 458);
+            this.button1.Location = new System.Drawing.Point(128, 316);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 30);
             this.button1.TabIndex = 5;
@@ -89,14 +88,18 @@ namespace Aplikacja
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox1
+            // btnRejestruj
             // 
-            this.pictureBox1.Image = global::Aplikacja.Properties.Resources.accountpicture1;
-            this.pictureBox1.Location = new System.Drawing.Point(142, 57);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.btnRejestruj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.btnRejestruj.Font = new System.Drawing.Font("Impact", 11.25F);
+            this.btnRejestruj.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btnRejestruj.Location = new System.Drawing.Point(128, 352);
+            this.btnRejestruj.Name = "btnRejestruj";
+            this.btnRejestruj.Size = new System.Drawing.Size(100, 30);
+            this.btnRejestruj.TabIndex = 6;
+            this.btnRejestruj.Text = "Rejestracja";
+            this.btnRejestruj.UseVisualStyleBackColor = false;
+            this.btnRejestruj.Click += new System.EventHandler(this.btnRejestruj_Click);
             // 
             // Logowanie
             // 
@@ -104,27 +107,26 @@ namespace Aplikacja
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(384, 561);
+            this.Controls.Add(this.btnRejestruj);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tHaslo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.tEmail);
             this.Name = "Logowanie";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logowanie";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tEmail;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tHaslo;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRejestruj;
     }
 }

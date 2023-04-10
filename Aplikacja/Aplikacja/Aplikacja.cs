@@ -14,26 +14,14 @@ namespace Aplikacja
 
     public partial class Aplikacja : Form
     {
-        public Aplikacja()
+        private string nazwa;
+        public Aplikacja(string nazwa)
         {
+            this.nazwa = nazwa;
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private void button3_Click(object sender, EventArgs e)
         {
 
@@ -86,5 +74,7 @@ namespace Aplikacja
             SoundPlayer splayer = new SoundPlayer("./musics/Havana.mp3");
             splayer.Play();
         }
+
+        
     }
 }

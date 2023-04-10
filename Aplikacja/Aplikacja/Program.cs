@@ -16,7 +16,7 @@ namespace Aplikacja
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Aplikacja());
+            Application.Run(new Logowanie());
         }
     }
 }
