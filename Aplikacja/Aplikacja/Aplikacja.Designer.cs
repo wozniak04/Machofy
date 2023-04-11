@@ -30,60 +30,63 @@ namespace Aplikacja
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Aplikacja));
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_ulubione = new System.Windows.Forms.Button();
+            this.btn_zaloguj = new System.Windows.Forms.Button();
             this.tWyszukaj = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.odtwarzana_muzyka = new System.Windows.Forms.Label();
+            this.btn_serce = new System.Windows.Forms.Button();
+            this.btn_like = new System.Windows.Forms.Button();
+            this.icon_music1 = new System.Windows.Forms.PictureBox();
+            this.piosenka1 = new System.Windows.Forms.PictureBox();
+            this.btn_forward = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
+            this.btn_play = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_search = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_music1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piosenka1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // btn_ulubione
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.button2.FlatAppearance.BorderSize = 5;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Impact", 13F);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.button2.Location = new System.Drawing.Point(128, 53);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 39);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "ULUBIONE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_ulubione.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.btn_ulubione.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btn_ulubione.FlatAppearance.BorderSize = 5;
+            this.btn_ulubione.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ulubione.Font = new System.Drawing.Font("Impact", 13F);
+            this.btn_ulubione.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btn_ulubione.Location = new System.Drawing.Point(128, 53);
+            this.btn_ulubione.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_ulubione.Name = "btn_ulubione";
+            this.btn_ulubione.Size = new System.Drawing.Size(97, 39);
+            this.btn_ulubione.TabIndex = 2;
+            this.btn_ulubione.Text = "ULUBIONE";
+            this.btn_ulubione.UseVisualStyleBackColor = false;
+            this.btn_ulubione.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btn_zaloguj
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.button1.FlatAppearance.BorderSize = 5;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Impact", 13F);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.button1.Location = new System.Drawing.Point(278, 53);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 39);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "ZALOGUJ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_zaloguj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.btn_zaloguj.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btn_zaloguj.FlatAppearance.BorderSize = 5;
+            this.btn_zaloguj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_zaloguj.Font = new System.Drawing.Font("Impact", 13F);
+            this.btn_zaloguj.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btn_zaloguj.Location = new System.Drawing.Point(278, 53);
+            this.btn_zaloguj.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_zaloguj.Name = "btn_zaloguj";
+            this.btn_zaloguj.Size = new System.Drawing.Size(97, 39);
+            this.btn_zaloguj.TabIndex = 4;
+            this.btn_zaloguj.Text = "ZALOGUJ";
+            this.btn_zaloguj.UseVisualStyleBackColor = false;
+            this.btn_zaloguj.Click += new System.EventHandler(this.button1_Click);
             // 
             // tWyszukaj
             // 
@@ -131,132 +134,144 @@ namespace Aplikacja
             // 
             // hScrollBar1
             // 
-            this.hScrollBar1.Location = new System.Drawing.Point(62, 475);
+            this.hScrollBar1.Location = new System.Drawing.Point(62, 411);
             this.hScrollBar1.Name = "hScrollBar1";
             this.hScrollBar1.Size = new System.Drawing.Size(271, 17);
             this.hScrollBar1.TabIndex = 21;
             this.hScrollBar1.Value = 100;
             // 
-            // button8
+            // odtwarzana_muzyka
             // 
-            this.button8.BackgroundImage = global::Aplikacja.Properties.Resources.serce2;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button8.Location = new System.Drawing.Point(289, 102);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(40, 40);
-            this.button8.TabIndex = 19;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.odtwarzana_muzyka.AutoSize = true;
+            this.odtwarzana_muzyka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.odtwarzana_muzyka.Location = new System.Drawing.Point(166, 475);
+            this.odtwarzana_muzyka.Name = "odtwarzana_muzyka";
+            this.odtwarzana_muzyka.Size = new System.Drawing.Size(35, 13);
+            this.odtwarzana_muzyka.TabIndex = 22;
+            this.odtwarzana_muzyka.Text = "label1";
+            this.odtwarzana_muzyka.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button7
+            // btn_serce
             // 
-            this.button7.BackgroundImage = global::Aplikacja.Properties.Resources.like21;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button7.Location = new System.Drawing.Point(335, 102);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(40, 40);
-            this.button7.TabIndex = 18;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btn_serce.BackgroundImage = global::Aplikacja.Properties.Resources.serce2;
+            this.btn_serce.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_serce.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_serce.FlatAppearance.BorderSize = 0;
+            this.btn_serce.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_serce.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_serce.Location = new System.Drawing.Point(289, 102);
+            this.btn_serce.Name = "btn_serce";
+            this.btn_serce.Size = new System.Drawing.Size(40, 40);
+            this.btn_serce.TabIndex = 19;
+            this.btn_serce.UseVisualStyleBackColor = true;
+            this.btn_serce.Click += new System.EventHandler(this.button8_Click);
             // 
-            // pictureBox3
+            // btn_like
             // 
-            this.pictureBox3.Image = global::Aplikacja.Properties.Resources.buttonpause;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 102);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
+            this.btn_like.BackgroundImage = global::Aplikacja.Properties.Resources.like21;
+            this.btn_like.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_like.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_like.FlatAppearance.BorderSize = 0;
+            this.btn_like.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_like.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_like.Location = new System.Drawing.Point(335, 102);
+            this.btn_like.Name = "btn_like";
+            this.btn_like.Size = new System.Drawing.Size(40, 40);
+            this.btn_like.TabIndex = 18;
+            this.btn_like.UseVisualStyleBackColor = true;
+            this.btn_like.Click += new System.EventHandler(this.button7_Click);
             // 
-            // pictureBox4
+            // icon_music1
             // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(-2, 95);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(391, 50);
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.icon_music1.Image = global::Aplikacja.Properties.Resources.icon1;
+            this.icon_music1.Location = new System.Drawing.Point(12, 102);
+            this.icon_music1.Name = "icon_music1";
+            this.icon_music1.Size = new System.Drawing.Size(40, 40);
+            this.icon_music1.TabIndex = 17;
+            this.icon_music1.TabStop = false;
             // 
-            // button6
+            // piosenka1
             // 
-            this.button6.BackgroundImage = global::Aplikacja.Properties.Resources.buttonprawo;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button6.Location = new System.Drawing.Point(332, 509);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(40, 40);
-            this.button6.TabIndex = 10;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.piosenka1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.piosenka1.Location = new System.Drawing.Point(-2, 95);
+            this.piosenka1.Name = "piosenka1";
+            this.piosenka1.Size = new System.Drawing.Size(391, 50);
+            this.piosenka1.TabIndex = 12;
+            this.piosenka1.TabStop = false;
+            this.piosenka1.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // button5
+            // btn_forward
             // 
-            this.button5.BackgroundImage = global::Aplikacja.Properties.Resources.Buttonlewo;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button5.Location = new System.Drawing.Point(18, 509);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(40, 40);
-            this.button5.TabIndex = 9;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btn_forward.BackgroundImage = global::Aplikacja.Properties.Resources.buttonprawo;
+            this.btn_forward.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_forward.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_forward.FlatAppearance.BorderSize = 0;
+            this.btn_forward.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_forward.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_forward.Location = new System.Drawing.Point(332, 509);
+            this.btn_forward.Name = "btn_forward";
+            this.btn_forward.Size = new System.Drawing.Size(40, 40);
+            this.btn_forward.TabIndex = 10;
+            this.btn_forward.UseVisualStyleBackColor = true;
+            this.btn_forward.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button4
+            // btn_back
             // 
-            this.button4.BackgroundImage = global::Aplikacja.Properties.Resources.button11;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button4.Location = new System.Drawing.Point(169, 509);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(40, 40);
-            this.button4.TabIndex = 8;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btn_back.BackgroundImage = global::Aplikacja.Properties.Resources.Buttonlewo;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_back.Location = new System.Drawing.Point(18, 509);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 9;
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btn_play
+            // 
+            this.btn_play.BackgroundImage = global::Aplikacja.Properties.Resources.button11;
+            this.btn_play.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_play.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_play.FlatAppearance.BorderSize = 0;
+            this.btn_play.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_play.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_play.Location = new System.Drawing.Point(169, 509);
+            this.btn_play.Name = "btn_play";
+            this.btn_play.Size = new System.Drawing.Size(40, 40);
+            this.btn_play.TabIndex = 8;
+            this.btn_play.UseVisualStyleBackColor = true;
+            this.btn_play.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.pictureBox2.Image = global::Aplikacja.Properties.Resources.tlo1;
-            this.pictureBox2.Location = new System.Drawing.Point(-2, 495);
+            this.pictureBox2.Location = new System.Drawing.Point(-2, 463);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(391, 72);
+            this.pictureBox2.Size = new System.Drawing.Size(391, 104);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
-            // button3
+            // btn_search
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.button3.BackgroundImage = global::Aplikacja.Properties.Resources.lupaicon;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button3.FlatAppearance.BorderSize = 50;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
-            this.button3.Location = new System.Drawing.Point(339, 13);
-            this.button3.Margin = new System.Windows.Forms.Padding(0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(30, 30);
-            this.button3.TabIndex = 6;
-            this.button3.Text = " ";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.btn_search.BackgroundImage = global::Aplikacja.Properties.Resources.lupaicon;
+            this.btn_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_search.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_search.FlatAppearance.BorderSize = 50;
+            this.btn_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(170)))), ((int)(((byte)(29)))));
+            this.btn_search.Location = new System.Drawing.Point(339, 13);
+            this.btn_search.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(30, 30);
+            this.btn_search.TabIndex = 6;
+            this.btn_search.Text = " ";
+            this.btn_search.UseVisualStyleBackColor = false;
+            this.btn_search.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox1
             // 
@@ -274,29 +289,30 @@ namespace Aplikacja
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(384, 561);
+            this.Controls.Add(this.odtwarzana_muzyka);
             this.Controls.Add(this.hScrollBar1);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.btn_serce);
+            this.Controls.Add(this.btn_like);
+            this.Controls.Add(this.icon_music1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.piosenka1);
+            this.Controls.Add(this.btn_forward);
+            this.Controls.Add(this.btn_back);
+            this.Controls.Add(this.btn_play);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btn_search);
             this.Controls.Add(this.tWyszukaj);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_zaloguj);
+            this.Controls.Add(this.btn_ulubione);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Aplikacja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MachoFy";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_music1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piosenka1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -307,22 +323,23 @@ namespace Aplikacja
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_ulubione;
+        private System.Windows.Forms.Button btn_zaloguj;
         private System.Windows.Forms.TextBox tWyszukaj;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btn_play;
+        private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btn_forward;
+        private System.Windows.Forms.PictureBox piosenka1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.PictureBox icon_music1;
+        private System.Windows.Forms.Button btn_like;
+        private System.Windows.Forms.Button btn_serce;
         private System.Windows.Forms.HScrollBar hScrollBar1;
+        private System.Windows.Forms.Label odtwarzana_muzyka;
     }
 }
 

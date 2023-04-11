@@ -199,6 +199,16 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Baza.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\icon10.png" />
+    <None Include="Resources\icon9.png" />
+    <None Include="Resources\icon8.png" />
+    <None Include="Resources\icon7.png" />
+    <None Include="Resources\icon6.png" />
+    <None Include="Resources\icon5.png" />
+    <None Include="Resources\icon4.png" />
+    <None Include="Resources\icon3.png" />
+    <None Include="Resources\icon2.png" />
+    <None Include="Resources\icon1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

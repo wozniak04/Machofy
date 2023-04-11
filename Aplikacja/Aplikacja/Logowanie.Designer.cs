@@ -43,6 +43,7 @@ namespace Aplikacja
             this.tEmail.Name = "tEmail";
             this.tEmail.Size = new System.Drawing.Size(174, 20);
             this.tEmail.TabIndex = 1;
+            this.tEmail.TextChanged += new System.EventHandler(this.tEmail_TextChanged);
             // 
             // label1
             // 
