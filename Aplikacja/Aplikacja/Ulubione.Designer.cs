@@ -1,11 +1,9 @@
 ﻿
-using System.Drawing;
-using System.Web.UI.DataVisualization.Charting;
 using System.Windows.Forms;
 
 namespace Aplikacja
 {
-    partial class Aplikacja
+    partial class Ulubione
     {
         /// <summary>
         /// Wymagana zmienna projektanta.
@@ -34,8 +32,7 @@ namespace Aplikacja
         public void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Aplikacja));
-            this.btn_ulubione = new System.Windows.Forms.Button();
+            this.btn_Aplikacja = new System.Windows.Forms.Button();
             this.btn_zaloguj = new System.Windows.Forms.Button();
             this.odtwarzana_muzyka = new System.Windows.Forms.Label();
             this.tCzas = new System.Windows.Forms.TrackBar();
@@ -52,22 +49,22 @@ namespace Aplikacja
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_ulubione
+            // btn_Aplikacja
             // 
-            this.btn_ulubione.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.btn_ulubione.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btn_ulubione.FlatAppearance.BorderSize = 5;
-            this.btn_ulubione.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ulubione.Font = new System.Drawing.Font("Impact", 13F);
-            this.btn_ulubione.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btn_ulubione.Location = new System.Drawing.Point(9, 9);
-            this.btn_ulubione.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_ulubione.Name = "btn_ulubione";
-            this.btn_ulubione.Size = new System.Drawing.Size(97, 48);
-            this.btn_ulubione.TabIndex = 2;
-            this.btn_ulubione.Text = "ULUBIONE";
-            this.btn_ulubione.UseVisualStyleBackColor = false;
-            this.btn_ulubione.Click += new System.EventHandler(this.btn_ulubione_Click);
+            this.btn_Aplikacja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.btn_Aplikacja.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btn_Aplikacja.FlatAppearance.BorderSize = 5;
+            this.btn_Aplikacja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Aplikacja.Font = new System.Drawing.Font("Impact", 13F);
+            this.btn_Aplikacja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btn_Aplikacja.Location = new System.Drawing.Point(9, 9);
+            this.btn_Aplikacja.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Aplikacja.Name = "btn_Aplikacja";
+            this.btn_Aplikacja.Size = new System.Drawing.Size(97, 48);
+            this.btn_Aplikacja.TabIndex = 2;
+            this.btn_Aplikacja.Text = "Główna";
+            this.btn_Aplikacja.UseVisualStyleBackColor = false;
+            this.btn_Aplikacja.Click += new System.EventHandler(this.btn_Aplikacja_Click);
             // 
             // btn_zaloguj
             // 
@@ -187,7 +184,7 @@ namespace Aplikacja
             // 
             this.czasMuzyka.Tick += new System.EventHandler(this.czasMuzyka_Tick);
             // 
-            // Aplikacja
+            // Ulubione
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -202,10 +199,9 @@ namespace Aplikacja
             this.Controls.Add(this.btn_play);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btn_zaloguj);
-            this.Controls.Add(this.btn_ulubione);
+            this.Controls.Add(this.btn_Aplikacja);
             this.Controls.Add(this.pictureBox1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Aplikacja";
+            this.Name = "Ulubione";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MachoFy";
             this.Load += new System.EventHandler(this.Aplikacja_Load);
@@ -220,7 +216,7 @@ namespace Aplikacja
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btn_ulubione;
+        private System.Windows.Forms.Button btn_Aplikacja;
         private System.Windows.Forms.Button btn_zaloguj;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btn_play;
@@ -233,4 +229,3 @@ namespace Aplikacja
         private Timer czasMuzyka;
     }
 }
-

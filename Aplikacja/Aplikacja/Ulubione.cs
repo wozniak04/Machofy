@@ -1,37 +1,37 @@
-﻿using System;
+﻿using NAudio.Wave;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using NAudio.Wave;
-using System.IO;
+
 namespace Aplikacja
 {
-
-    public partial class Aplikacja : Form
+    public partial class Ulubione : Form
     {
         private WaveOutEvent waveOut = new WaveOutEvent();
         private long pozycja;
         private AudioFileReader audio;
         private string Tytul;
         private bool czygra = false;
-       
+
         private string Email;
-        public Aplikacja(string nazwa)
+        public Ulubione(string nazwa)
         {
             Email = nazwa;
             InitializeComponent();
-           
+
         }
 
-        
 
 
-     
+
+
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -61,10 +61,10 @@ namespace Aplikacja
         private void Aplikacja_Load(object sender, EventArgs e)
         {
             btn_play.BackgroundImage = Properties.Resources.buttonpause;
-            foreach(string filepath in Directory.EnumerateFiles("../../Resources/Musics"))
+            foreach (string filepath in Directory.EnumerateFiles("../../Resources/Musics"))
             {
                 string[] nazwamuzyki = Path.GetFileName(filepath).ToString().Split('_');
-                var control = new Muzyki(nazwamuzyki[1].Split('.')[0],nazwamuzyki[0], Properties.Resources.icon1,Email);
+                var control = new Muzyki(nazwamuzyki[1].Split('.')[0], nazwamuzyki[0], Properties.Resources.icon1, Email);
 
                 control.Clicked += new EventHandler<string>(Muzyki_Clicked);
 
@@ -89,10 +89,10 @@ namespace Aplikacja
             waveOut.Play();
             tCzas.Maximum = (int)audio.TotalTime.TotalSeconds;
             lTytul.Text = tytul.Split('.')[0];
-            ltotalczas.Text ="Czas trwania : "+ audio.TotalTime.ToString(@"mm\:ss");
+            ltotalczas.Text = "Czas trwania : " + audio.TotalTime.ToString(@"mm\:ss");
             czygra = !czygra;
             czasMuzyka.Enabled = true;
-            
+
         }
 
         private void btn_zaloguj_Click(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace Aplikacja
         {
             if (audio != null)
             {
-                lCzas.Text =audio.CurrentTime.ToString(@"mm\:ss");
+                lCzas.Text = audio.CurrentTime.ToString(@"mm\:ss");
                 tCzas.Value = (int)audio.CurrentTime.TotalSeconds;
             }
         }
@@ -117,7 +117,7 @@ namespace Aplikacja
             }
         }
 
-        private void btn_ulubione_Click(object sender, EventArgs e)
+        private void btn_Aplikacja_Click(object sender, EventArgs e)
         {
 
         }

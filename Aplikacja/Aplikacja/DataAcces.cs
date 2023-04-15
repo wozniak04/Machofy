@@ -55,5 +55,50 @@ namespace Aplikacja
             }
             
         }
+        public bool dodajUlubienie(string email,string muzyka)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT Email,Muzyka FROM Ulubione WHERE Email=@email AND Muzyka=@muzyka;", conn);
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@muzyka", muzyka);
+                SqlDataReader rdr;
+                rdr = cmd.ExecuteReader();
+                if (rdr.Read())
+                {
+                    rdr.Close();
+                    conn.Close();
+                    return true;
+                }
+                rdr.Close();
+                cmd = new SqlCommand("INSERT INTO Ulubione (Email,Muzyka) VALUES (@email,@muzyka);", conn);
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@muzyka", muzyka);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }catch
+            {
+                return false;
+            }
+            return true;
+
+        }
+        public bool Ulubione(string email,string muzyka)
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT Muzyka FROM Ulubione WHERE Email=@email AND Muzyka=@muzyka;", conn);
+            cmd.Parameters.AddWithValue("@email", email);
+            cmd.Parameters.AddWithValue("@muzyka", muzyka);
+            SqlDataReader rdr;
+            rdr = cmd.ExecuteReader();
+            if (rdr.Read())
+            {
+                rdr.Close();
+                conn.Close();
+                return true;
+            }
+            return false;
+        }
     }
 }

@@ -19,10 +19,11 @@ namespace Aplikacja
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            // var pol = new DataAcces();
+            tEmail.Text = BCrypt.Net.BCrypt.HashPassword(tHaslo.Text, 10);
+            MessageBox.Show(tEmail.Text.Length.ToString());
             
-            string haslo = BCrypt.Net.BCrypt.HashPassword(tHaslo.Text.ToString());
-            MessageBox.Show(BCrypt.Net.BCrypt.Verify("Qwerty1@3",haslo).ToString());
+            //MessageBox.Show(pol.Logowanie(tEmail.Text,tHaslo.Text).ToString());
             button1.FlatStyle = FlatStyle.Flat;
             button1.FlatAppearance.BorderSize = 0;
         }
