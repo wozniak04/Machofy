@@ -11,24 +11,42 @@ namespace Aplikacja
     class DataAcces
     {
         private SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + System.IO.Directory.GetCurrentDirectory() + @"\Baza.mdf" + ";Integrated Security=True;");
-
-        public bool Rejestracja(string email,string haslo)
+        public bool Checkemail(string email)
         {
-            try
-            {
-                conn.Open();
-                string query = "INSERT INTO Uzytkownicy (Email,Haslo) VALUES (@email,@haslo);";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@email", email);
-                cmd.Parameters.AddWithValue("@haslo", haslo);
-                cmd.ExecuteNonQuery();
-                conn.Close();
-            }
-            catch
-            {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT Email From Uzytkownicy Where Email=@email;", conn);
+            cmd.Parameters.AddWithValue("@email", email);
+            SqlDataReader rdr;
+            rdr = cmd.ExecuteReader();
+            if (rdr.Read())
                 return false;
-            }
             return true;
+
+        }
+        public string Rejestracja(string email,string haslo)
+        {
+            if (Checkemail(email))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "INSERT INTO Uzytkownicy (Email,Haslo) VALUES (@email,@haslo);";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@email", email);
+                    cmd.Parameters.AddWithValue("@haslo", haslo);
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
+                catch
+                {
+                    return "błąd w rejestracji";
+                }
+            }
+            else
+            {
+                return "Dany email już istnieje";
+            }
+            return "";
         }
         public bool Logowanie(string email,string haslo)
         {

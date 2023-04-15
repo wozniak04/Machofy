@@ -36,7 +36,7 @@ namespace Aplikacja
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Aplikacja));
             this.btn_ulubione = new System.Windows.Forms.Button();
-            this.btn_zaloguj = new System.Windows.Forms.Button();
+            this.btn_Wyloguj = new System.Windows.Forms.Button();
             this.odtwarzana_muzyka = new System.Windows.Forms.Label();
             this.tCzas = new System.Windows.Forms.TrackBar();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -71,22 +71,22 @@ namespace Aplikacja
             this.btn_ulubione.UseVisualStyleBackColor = false;
             this.btn_ulubione.Click += new System.EventHandler(this.btn_ulubione_Click);
             // 
-            // btn_zaloguj
+            // btn_Wyloguj
             // 
-            this.btn_zaloguj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.btn_zaloguj.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btn_zaloguj.FlatAppearance.BorderSize = 5;
-            this.btn_zaloguj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_zaloguj.Font = new System.Drawing.Font("Impact", 13F);
-            this.btn_zaloguj.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btn_zaloguj.Location = new System.Drawing.Point(278, 9);
-            this.btn_zaloguj.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_zaloguj.Name = "btn_zaloguj";
-            this.btn_zaloguj.Size = new System.Drawing.Size(97, 48);
-            this.btn_zaloguj.TabIndex = 4;
-            this.btn_zaloguj.Text = "Wyloguj";
-            this.btn_zaloguj.UseVisualStyleBackColor = false;
-            this.btn_zaloguj.Click += new System.EventHandler(this.btn_zaloguj_Click);
+            this.btn_Wyloguj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.btn_Wyloguj.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btn_Wyloguj.FlatAppearance.BorderSize = 5;
+            this.btn_Wyloguj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Wyloguj.Font = new System.Drawing.Font("Impact", 13F);
+            this.btn_Wyloguj.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btn_Wyloguj.Location = new System.Drawing.Point(278, 9);
+            this.btn_Wyloguj.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Wyloguj.Name = "btn_Wyloguj";
+            this.btn_Wyloguj.Size = new System.Drawing.Size(97, 48);
+            this.btn_Wyloguj.TabIndex = 4;
+            this.btn_Wyloguj.Text = "Wyloguj";
+            this.btn_Wyloguj.UseVisualStyleBackColor = false;
+            this.btn_Wyloguj.Click += new System.EventHandler(this.btn_Wyloguj_Click);
             // 
             // odtwarzana_muzyka
             // 
@@ -221,7 +221,7 @@ namespace Aplikacja
             this.Controls.Add(this.odtwarzana_muzyka);
             this.Controls.Add(this.btn_play);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btn_zaloguj);
+            this.Controls.Add(this.btn_Wyloguj);
             this.Controls.Add(this.btn_ulubione);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -242,7 +242,7 @@ namespace Aplikacja
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_ulubione;
-        private System.Windows.Forms.Button btn_zaloguj;
+        private System.Windows.Forms.Button btn_Wyloguj;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btn_play;
         private System.Windows.Forms.Label odtwarzana_muzyka;

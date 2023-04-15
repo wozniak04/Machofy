@@ -84,7 +84,7 @@ namespace Aplikacja
             btn_play.BackgroundImage = Properties.Resources.buttonpause;
             Tytul = tytul;
             audio = new AudioFileReader("../../Resources/Musics/" + Tytul);
-            audio.Volume = 0.2f;
+            audio.Volume = tGlosnosc.Value/100f;
             waveOut.Init(audio);
             waveOut.Play();
             tCzas.Maximum = (int)audio.TotalTime.TotalSeconds;
@@ -95,10 +95,8 @@ namespace Aplikacja
             
         }
 
-        private void btn_zaloguj_Click(object sender, EventArgs e)
-        {
-
-        }
+         
+        
 
         private void czasMuzyka_Tick(object sender, EventArgs e)
         {
@@ -129,7 +127,16 @@ namespace Aplikacja
 
         private void tGlosnosc_Scroll(object sender, EventArgs e)
         {
-            audio.Volume = tGlosnosc.Value / 100f;
+            if(audio!=null)
+                audio.Volume = tGlosnosc.Value / 100f;
+        }
+
+        private void btn_Wyloguj_Click(object sender, EventArgs e)
+        {
+            var okno = new Logowanie();
+            this.Hide();
+            okno.ShowDialog();
+            this.Close();
         }
     }
 }

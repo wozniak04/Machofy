@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,23 +23,34 @@ namespace Aplikacja
 
             btnRejestruj.FlatStyle = FlatStyle.Flat;
             btnRejestruj.FlatAppearance.BorderSize = 0;
-
-            if (tHaslo1.Text.ToString().Equals(tHaslo2.Text.ToString()))
+            if (Regex.IsMatch(tEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
             {
-                var pol = new DataAcces();
-                string haslo = BCrypt.Net.BCrypt.HashPassword(tHaslo1.Text.ToString());
-                if(pol.Rejestracja(tEmail.Text, haslo))
+                if (tHaslo1.Text.ToString().Equals(tHaslo2.Text.ToString()))
                 {
-                    MessageBox.Show("Zarejestrowano pomyślnie");
-                    var okno = new Aplikacja(tEmail.Text.ToString());
-                    this.Hide();
-                    okno.ShowDialog();
-                    this.Close();
+                    var pol = new DataAcces();
+                    string haslo = BCrypt.Net.BCrypt.HashPassword(tHaslo1.Text.ToString());
+                    string dane = pol.Rejestracja(tEmail.Text, haslo);
+                    if (dane=="")
+                    {
+                        MessageBox.Show("Zarejestrowano pomyślnie");
+                        var okno = new Aplikacja(tEmail.Text.ToString());
+                        this.Hide();
+                        okno.ShowDialog();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show(dane);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Rejestracja nie powiodła się");
+                    MessageBox.Show("hasła różnią się");
                 }
+            }
+            else
+            {
+                MessageBox.Show("zły email");
             }
         }
     }

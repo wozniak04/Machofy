@@ -29,10 +29,6 @@ namespace Aplikacja
         }
 
 
-
-
-
-
         private void button4_Click(object sender, EventArgs e)
         {
             if (czygra)
@@ -80,20 +76,7 @@ namespace Aplikacja
         }
         private void Muzyki_Clicked(object sender, string tytul)
         {
-            var pol = new DataAcces();
-            foreach (string filepath in Directory.EnumerateFiles("../../Resources/Musics"))
-            {
-                if (pol.Ulubione(Email, Path.GetFileName(filepath).ToString()))
-                {
-                    string[] nazwamuzyki = Path.GetFileName(filepath).ToString().Split('_');
-                    var control = new UlubionaMuzyka(nazwamuzyki[1].Split('.')[0], nazwamuzyki[0], (Image)Properties.Resources.ResourceManager.GetObject(Path.GetFileName(filepath).ToString().Split('.')[0]), Email);
-
-                    control.Clicked += new EventHandler<string>(Muzyki_Clicked);
-
-                    flowLayoutPanel1.Controls.Add(control);
-                }
-
-            }
+            
             if (czygra)
             {
                 waveOut.Stop();
@@ -115,7 +98,10 @@ namespace Aplikacja
 
         private void btn_zaloguj_Click(object sender, EventArgs e)
         {
-
+            var okno = new Logowanie();
+            this.Hide();
+            okno.ShowDialog();
+            this.Close();
         }
 
         private void czasMuzyka_Tick(object sender, EventArgs e)
