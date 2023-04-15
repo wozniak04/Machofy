@@ -28,6 +28,14 @@ namespace Aplikacja
             this.imgPlay.Click += new EventHandler(Muzyki_Click);
         }
 
+        private void pDisslike_Click(object sender, EventArgs e)
+        {
+            var pol = new DataAcces();
+            if(pol.UsunUlubione(Email, Tytuls + "_" + Wykonawcas + ".wav"))
+            {
+                MessageBox.Show("Usunięto");
+            }
+        }
 
         private void Muzyki_Load(object sender, EventArgs e)
         {

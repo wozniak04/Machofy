@@ -33,8 +33,10 @@ namespace Aplikacja
             this.Wykonawca = new System.Windows.Forms.Label();
             this.Tytul = new System.Windows.Forms.Label();
             this.imgPlay = new System.Windows.Forms.PictureBox();
+            this.pDisslike = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ImgWykonawca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pDisslike)).BeginInit();
             this.SuspendLayout();
             // 
             // ImgWykonawca
@@ -75,11 +77,23 @@ namespace Aplikacja
             this.imgPlay.TabIndex = 3;
             this.imgPlay.TabStop = false;
             // 
+            // pDisslike
+            // 
+            this.pDisslike.BackgroundImage = global::Aplikacja.Properties.Resources.dislike;
+            this.pDisslike.InitialImage = null;
+            this.pDisslike.Location = new System.Drawing.Point(207, 25);
+            this.pDisslike.Name = "pDisslike";
+            this.pDisslike.Size = new System.Drawing.Size(33, 28);
+            this.pDisslike.TabIndex = 4;
+            this.pDisslike.TabStop = false;
+            this.pDisslike.Click += new System.EventHandler(this.pDisslike_Click);
+            // 
             // UlubionaMuzyka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.pDisslike);
             this.Controls.Add(this.imgPlay);
             this.Controls.Add(this.Tytul);
             this.Controls.Add(this.Wykonawca);
@@ -89,6 +103,7 @@ namespace Aplikacja
             this.Load += new System.EventHandler(this.Muzyki_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ImgWykonawca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pDisslike)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,5 +115,6 @@ namespace Aplikacja
         private System.Windows.Forms.Label Wykonawca;
         private System.Windows.Forms.Label Tytul;
         private System.Windows.Forms.PictureBox imgPlay;
+        private System.Windows.Forms.PictureBox pDisslike;
     }
 }

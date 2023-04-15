@@ -47,9 +47,11 @@ namespace Aplikacja
             this.lCzas = new System.Windows.Forms.Label();
             this.ltotalczas = new System.Windows.Forms.Label();
             this.czasMuzyka = new System.Windows.Forms.Timer(this.components);
+            this.tGlosnosc = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.tCzas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tGlosnosc)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_ulubione
@@ -187,12 +189,30 @@ namespace Aplikacja
             // 
             this.czasMuzyka.Tick += new System.EventHandler(this.czasMuzyka_Tick);
             // 
+            // tGlosnosc
+            // 
+            this.tGlosnosc.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.tGlosnosc.AutoSize = false;
+            this.tGlosnosc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.tGlosnosc.LargeChange = 1;
+            this.tGlosnosc.Location = new System.Drawing.Point(237, 475);
+            this.tGlosnosc.Margin = new System.Windows.Forms.Padding(0);
+            this.tGlosnosc.Maximum = 100;
+            this.tGlosnosc.Name = "tGlosnosc";
+            this.tGlosnosc.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.tGlosnosc.Size = new System.Drawing.Size(21, 65);
+            this.tGlosnosc.TabIndex = 28;
+            this.tGlosnosc.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.tGlosnosc.Value = 20;
+            this.tGlosnosc.Scroll += new System.EventHandler(this.tGlosnosc_Scroll);
+            // 
             // Aplikacja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(384, 561);
+            this.Controls.Add(this.tGlosnosc);
             this.Controls.Add(this.ltotalczas);
             this.Controls.Add(this.lCzas);
             this.Controls.Add(this.lTytul);
@@ -212,6 +232,7 @@ namespace Aplikacja
             ((System.ComponentModel.ISupportInitialize)(this.tCzas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tGlosnosc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,6 +252,7 @@ namespace Aplikacja
         private Label lCzas;
         private Label ltotalczas;
         private Timer czasMuzyka;
+        private TrackBar tGlosnosc;
     }
 }
 

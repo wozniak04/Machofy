@@ -113,29 +113,9 @@ namespace Aplikacja.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Buttonlewo {
-            get {
-                object obj = ResourceManager.GetObject("Buttonlewo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap buttonpause {
             get {
                 object obj = ResourceManager.GetObject("buttonpause", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap buttonprawo {
-            get {
-                object obj = ResourceManager.GetObject("buttonprawo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +163,16 @@ namespace Aplikacja.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dislike {
+            get {
+                object obj = ResourceManager.GetObject("dislike", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FosterThePeople_PumpedUpKicks {
             get {
                 object obj = ResourceManager.GetObject("FosterThePeople_PumpedUpKicks", resourceCulture);
@@ -223,39 +213,9 @@ namespace Aplikacja.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap like11 {
-            get {
-                object obj = ResourceManager.GetObject("like11", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap like2 {
-            get {
-                object obj = ResourceManager.GetObject("like2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap like21 {
             get {
                 object obj = ResourceManager.GetObject("like21", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap lupaicon {
-            get {
-                object obj = ResourceManager.GetObject("lupaicon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -276,26 +236,6 @@ namespace Aplikacja.Properties {
         internal static System.Drawing.Bitmap Onerepublic_CountingStars {
             get {
                 object obj = ResourceManager.GetObject("Onerepublic_CountingStars", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap serce1 {
-            get {
-                object obj = ResourceManager.GetObject("serce1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap serce2 {
-            get {
-                object obj = ResourceManager.GetObject("serce2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

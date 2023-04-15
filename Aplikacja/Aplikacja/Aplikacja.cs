@@ -120,10 +120,16 @@ namespace Aplikacja
 
         private void btn_ulubione_Click(object sender, EventArgs e)
         {
+            waveOut.Stop();
             var okno = new Ulubione(Email);
             this.Hide();
             okno.ShowDialog();
             this.Close();
+        }
+
+        private void tGlosnosc_Scroll(object sender, EventArgs e)
+        {
+            audio.Volume = tGlosnosc.Value / 100f;
         }
     }
 }
