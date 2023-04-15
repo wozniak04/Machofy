@@ -33,10 +33,8 @@ namespace Aplikacja
             this.Wykonawca = new System.Windows.Forms.Label();
             this.Tytul = new System.Windows.Forms.Label();
             this.imgPlay = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ImgWykonawca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPlay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // ImgWykonawca
@@ -75,24 +73,22 @@ namespace Aplikacja
             this.imgPlay.Name = "imgPlay";
             this.imgPlay.Size = new System.Drawing.Size(40, 40);
             this.imgPlay.TabIndex = 3;
-            this.imgPlay.TabStop = false; 
+            this.imgPlay.TabStop = false;
             // 
-            // Muzyki
+            // UlubionaMuzyka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.imgPlay);
             this.Controls.Add(this.Tytul);
             this.Controls.Add(this.Wykonawca);
             this.Controls.Add(this.ImgWykonawca);
-            this.Name = "Muzyki";
+            this.Name = "UlubionaMuzyka";
             this.Size = new System.Drawing.Size(300, 80);
             this.Load += new System.EventHandler(this.Muzyki_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ImgWykonawca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPlay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,6 +100,5 @@ namespace Aplikacja
         private System.Windows.Forms.Label Wykonawca;
         private System.Windows.Forms.Label Tytul;
         private System.Windows.Forms.PictureBox imgPlay;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

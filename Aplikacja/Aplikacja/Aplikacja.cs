@@ -64,7 +64,7 @@ namespace Aplikacja
             foreach(string filepath in Directory.EnumerateFiles("../../Resources/Musics"))
             {
                 string[] nazwamuzyki = Path.GetFileName(filepath).ToString().Split('_');
-                var control = new Muzyki(nazwamuzyki[1].Split('.')[0],nazwamuzyki[0], Properties.Resources.icon1,Email);
+                var control = new Muzyki(nazwamuzyki[1].Split('.')[0],nazwamuzyki[0], (Image)Properties.Resources.ResourceManager.GetObject(Path.GetFileName(filepath).ToString().Split('.')[0]),Email);
 
                 control.Clicked += new EventHandler<string>(Muzyki_Clicked);
 
@@ -114,12 +114,16 @@ namespace Aplikacja
             if (audio != null)
             {
                 audio.CurrentTime = TimeSpan.FromSeconds(tCzas.Value);
+                pozycja = audio.Position;
             }
         }
 
         private void btn_ulubione_Click(object sender, EventArgs e)
         {
-
+            var okno = new Ulubione(Email);
+            this.Hide();
+            okno.ShowDialog();
+            this.Close();
         }
     }
 }

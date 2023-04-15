@@ -125,6 +125,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Rejestracja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +141,12 @@
     </Compile>
     <Compile Include="Muzyki.Designer.cs">
       <DependentUpon>Muzyki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UlubionaMuzyka.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UlubionaMuzyka.Designer.cs">
+      <DependentUpon>UlubionaMuzyka.cs</DependentUpon>
     </Compile>
     <Compile Include="Ulubione.cs">
       <SubType>Form</SubType>
@@ -154,16 +165,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Rejestracja.resx">
       <DependentUpon>Rejestracja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UlubionaMuzyka.resx">
+      <DependentUpon>UlubionaMuzyka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ulubione.resx">
       <DependentUpon>Ulubione.cs</DependentUpon>
@@ -182,52 +191,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tlo1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\lupaicon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kolortlodol.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\buttonpause.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Buttonlewo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\buttonprawo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\like1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\like2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\like11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\like21.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\serce1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\serce2.png" />
-  </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <None Include="Resources\accountpicture1.png" />
-  </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
@@ -248,27 +212,44 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Baza.mdf</DependentUpon>
     </Content>
+    <Content Include="Resources\accountpicture.png" />
+    <Content Include="Resources\accountpicture1.png" />
+    <Content Include="Resources\Avicii_TheNights.png" />
+    <Content Include="Resources\button1.png" />
+    <Content Include="Resources\button11.png" />
+    <Content Include="Resources\Buttonlewo.png" />
+    <Content Include="Resources\buttonpause.png" />
+    <Content Include="Resources\buttonprawo.png" />
+    <Content Include="Resources\CamillaCabella_Havana.png" />
+    <Content Include="Resources\CharliXCX_BreakTheRules.png" />
+    <Content Include="Resources\CleanBandit_Solo.png" />
+    <Content Include="Resources\DaftPunk_GetLucky.png" />
+    <Content Include="Resources\dislike1.png" />
+    <Content Include="Resources\dislike2.png" />
+    <Content Include="Resources\FosterThePeople_PumpedUpKicks.png" />
+    <Content Include="Resources\ImagineDragons_Thunder.png" />
+    <Content Include="Resources\kolortlodol.png" />
+    <Content Include="Resources\like1.png" />
+    <Content Include="Resources\like11.png" />
+    <Content Include="Resources\like2.png" />
+    <Content Include="Resources\like21.png" />
+    <Content Include="Resources\lupaicon.png" />
+    <Content Include="Resources\Maroon5_Maps.png" />
     <Content Include="Resources\Musics\Avicii_TheNights.wav" />
     <Content Include="Resources\Musics\CamillaCabella_Havana.wav" />
     <Content Include="Resources\Musics\CharliXCX_BreakTheRules.wav" />
     <Content Include="Resources\Musics\CleanBandit_Solo.wav" />
     <Content Include="Resources\Musics\DaftPunk_GetLucky.wav" />
     <Content Include="Resources\Musics\FosterThePeople_PumpedUpKicks.wav" />
-    <Content Include="Resources\Musics\Havana.wav" />
     <Content Include="Resources\Musics\ImagineDragons_Thunder.wav" />
     <Content Include="Resources\Musics\Maroon5_Maps.wav" />
     <Content Include="Resources\Musics\Onerepublic_CountingStars.wav" />
     <Content Include="Resources\Musics\SevenNationArmy_TheWhiteStripes.wav" />
-    <None Include="Resources\icon10.png" />
-    <None Include="Resources\icon9.png" />
-    <None Include="Resources\icon8.png" />
-    <None Include="Resources\icon7.png" />
-    <None Include="Resources\icon6.png" />
-    <None Include="Resources\icon5.png" />
-    <None Include="Resources\icon4.png" />
-    <None Include="Resources\icon3.png" />
-    <None Include="Resources\icon2.png" />
-    <None Include="Resources\icon1.png" />
+    <Content Include="Resources\Onerepublic_CountingStars.png" />
+    <Content Include="Resources\serce1.png" />
+    <Content Include="Resources\serce2.png" />
+    <Content Include="Resources\SevenNationArmy_TheWhiteStripes.png" />
+    <Content Include="Resources\tlo1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

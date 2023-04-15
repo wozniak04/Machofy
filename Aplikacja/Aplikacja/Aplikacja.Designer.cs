@@ -155,7 +155,7 @@ namespace Aplikacja
             this.lTytul.AutoSize = true;
             this.lTytul.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.lTytul.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lTytul.Location = new System.Drawing.Point(12, 509);
+            this.lTytul.Location = new System.Drawing.Point(6, 492);
             this.lTytul.Name = "lTytul";
             this.lTytul.Size = new System.Drawing.Size(32, 13);
             this.lTytul.TabIndex = 25;
@@ -177,7 +177,7 @@ namespace Aplikacja
             this.ltotalczas.AutoSize = true;
             this.ltotalczas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.ltotalczas.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ltotalczas.Location = new System.Drawing.Point(262, 509);
+            this.ltotalczas.Location = new System.Drawing.Point(275, 492);
             this.ltotalczas.Name = "ltotalczas";
             this.ltotalczas.Size = new System.Drawing.Size(71, 13);
             this.ltotalczas.TabIndex = 27;

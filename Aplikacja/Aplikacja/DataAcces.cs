@@ -86,19 +86,36 @@ namespace Aplikacja
         }
         public bool Ulubione(string email,string muzyka)
         {
-            conn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT Muzyka FROM Ulubione WHERE Email=@email AND Muzyka=@muzyka;", conn);
-            cmd.Parameters.AddWithValue("@email", email);
-            cmd.Parameters.AddWithValue("@muzyka", muzyka);
-            SqlDataReader rdr;
-            rdr = cmd.ExecuteReader();
-            if (rdr.Read())
+            try
             {
-                rdr.Close();
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT Muzyka FROM Ulubione WHERE Email=@email AND Muzyka=@muzyka;", conn);
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@muzyka", muzyka);
+                SqlDataReader rdr;
+                rdr = cmd.ExecuteReader();
+                if (rdr.Read())
+                {
+                    conn.Close();
+                    return true;
+                }
                 conn.Close();
-                return true;
+            }
+            catch
+            {
+                return false;
             }
             return false;
+        }
+        public bool UsunUlubione(string email,string muzyka)
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("DELETE FROM Ulubione WHERE Email=@email AND Muzyka=@muzyka;", conn);
+            cmd.Parameters.AddWithValue("@email", email);
+            cmd.Parameters.AddWithValue("@muzyka", muzyka);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            return true;
         }
     }
 }

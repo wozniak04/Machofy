@@ -19,7 +19,7 @@ namespace Aplikacja.Properties {
     // przez narzędzie, takie jak ResGen lub Visual Studio.
     // Aby dodać lub usunąć składową, edytuj plik ResX, a następnie ponownie uruchom narzędzie ResGen
     // z opcją /str lub ponownie utwórz projekt VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -83,6 +83,16 @@ namespace Aplikacja.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Avicii_TheNights {
+            get {
+                object obj = ResourceManager.GetObject("Avicii_TheNights", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap button1 {
             get {
                 object obj = ResourceManager.GetObject("button1", resourceCulture);
@@ -133,9 +143,9 @@ namespace Aplikacja.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon1 {
+        internal static System.Drawing.Bitmap CamillaCabella_Havana {
             get {
-                object obj = ResourceManager.GetObject("icon1", resourceCulture);
+                object obj = ResourceManager.GetObject("CamillaCabella_Havana", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +153,9 @@ namespace Aplikacja.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon10 {
+        internal static System.Drawing.Bitmap CharliXCX_BreakTheRules {
             get {
-                object obj = ResourceManager.GetObject("icon10", resourceCulture);
+                object obj = ResourceManager.GetObject("CharliXCX_BreakTheRules", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +163,9 @@ namespace Aplikacja.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon2 {
+        internal static System.Drawing.Bitmap CleanBandit_Solo {
             get {
-                object obj = ResourceManager.GetObject("icon2", resourceCulture);
+                object obj = ResourceManager.GetObject("CleanBandit_Solo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +173,9 @@ namespace Aplikacja.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon3 {
+        internal static System.Drawing.Bitmap DaftPunk_GetLucky {
             get {
-                object obj = ResourceManager.GetObject("icon3", resourceCulture);
+                object obj = ResourceManager.GetObject("DaftPunk_GetLucky", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +183,9 @@ namespace Aplikacja.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon4 {
+        internal static System.Drawing.Bitmap FosterThePeople_PumpedUpKicks {
             get {
-                object obj = ResourceManager.GetObject("icon4", resourceCulture);
+                object obj = ResourceManager.GetObject("FosterThePeople_PumpedUpKicks", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,49 +193,9 @@ namespace Aplikacja.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon5 {
+        internal static System.Drawing.Bitmap ImagineDragons_Thunder {
             get {
-                object obj = ResourceManager.GetObject("icon5", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icon6 {
-            get {
-                object obj = ResourceManager.GetObject("icon6", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icon7 {
-            get {
-                object obj = ResourceManager.GetObject("icon7", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icon8 {
-            get {
-                object obj = ResourceManager.GetObject("icon8", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icon9 {
-            get {
-                object obj = ResourceManager.GetObject("icon9", resourceCulture);
+                object obj = ResourceManager.GetObject("ImagineDragons_Thunder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,6 +263,26 @@ namespace Aplikacja.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Maroon5_Maps {
+            get {
+                object obj = ResourceManager.GetObject("Maroon5_Maps", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Onerepublic_CountingStars {
+            get {
+                object obj = ResourceManager.GetObject("Onerepublic_CountingStars", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap serce1 {
             get {
                 object obj = ResourceManager.GetObject("serce1", resourceCulture);
@@ -306,6 +296,16 @@ namespace Aplikacja.Properties {
         internal static System.Drawing.Bitmap serce2 {
             get {
                 object obj = ResourceManager.GetObject("serce2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SevenNationArmy_TheWhiteStripes {
+            get {
+                object obj = ResourceManager.GetObject("SevenNationArmy_TheWhiteStripes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

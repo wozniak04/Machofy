@@ -61,14 +61,18 @@ namespace Aplikacja
         private void Aplikacja_Load(object sender, EventArgs e)
         {
             btn_play.BackgroundImage = Properties.Resources.buttonpause;
+            var pol = new DataAcces();
             foreach (string filepath in Directory.EnumerateFiles("../../Resources/Musics"))
             {
-                string[] nazwamuzyki = Path.GetFileName(filepath).ToString().Split('_');
-                var control = new Muzyki(nazwamuzyki[1].Split('.')[0], nazwamuzyki[0], Properties.Resources.icon1, Email);
+                if (pol.Ulubione(Email, Path.GetFileName(filepath).ToString()))
+                {
+                    string[] nazwamuzyki = Path.GetFileName(filepath).ToString().Split('_');
+                    var control = new Muzyki(nazwamuzyki[1].Split('.')[0], nazwamuzyki[0], (Image)Properties.Resources.ResourceManager.GetObject(Path.GetFileName(filepath).ToString().Split('.')[0]), Email);
 
-                control.Clicked += new EventHandler<string>(Muzyki_Clicked);
+                    control.Clicked += new EventHandler<string>(Muzyki_Clicked);
 
-                flowLayoutPanel1.Controls.Add(control);
+                    flowLayoutPanel1.Controls.Add(control);
+                }
 
             }
 
@@ -114,12 +118,16 @@ namespace Aplikacja
             if (audio != null)
             {
                 audio.CurrentTime = TimeSpan.FromSeconds(tCzas.Value);
+                pozycja = audio.Position;
             }
         }
 
         private void btn_Aplikacja_Click(object sender, EventArgs e)
         {
-
+            var okno = new Aplikacja(Email);
+            this.Hide();
+            okno.ShowDialog();
+            this.Close();
         }
     }
 }

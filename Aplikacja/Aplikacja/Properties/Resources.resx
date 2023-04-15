@@ -118,82 +118,82 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="buttonpause" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buttonpause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="accountpicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\accountpicture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="accountpicture1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\accountpicture1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="accountpicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\accountpicture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="serce1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\serce1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tlo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tlo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="like2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\like2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Buttonlewo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Buttonlewo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="like1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\like1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Avicii_TheNights" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Avicii_TheNights.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kolortlodol" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kolortlodol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="button11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="like11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\like11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Buttonlewo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buttonlewo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="like21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\like21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="buttonpause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonpause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="buttonprawo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buttonprawo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="button11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\button11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CamillaCabella_Havana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamillaCabella_Havana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CharliXCX_BreakTheRules" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CharliXCX_BreakTheRules.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CleanBandit_Solo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CleanBandit_Solo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DaftPunk_GetLucky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DaftPunk_GetLucky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FosterThePeople_PumpedUpKicks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FosterThePeople_PumpedUpKicks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImagineDragons_Thunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImagineDragons_Thunder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kolortlodol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kolortlodol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="like1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\like1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="like11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\like11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="like2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\like2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="like21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\like21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lupaicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lupaicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Maroon5_Maps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maroon5_Maps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Onerepublic_CountingStars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Onerepublic_CountingStars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="serce1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\serce1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="serce2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\serce2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SevenNationArmy_TheWhiteStripes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SevenNationArmy_TheWhiteStripes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tlo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tlo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
