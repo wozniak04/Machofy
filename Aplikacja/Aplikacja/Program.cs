@@ -15,7 +15,7 @@ namespace Aplikacja
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.Run(new Aplikacja("asdasd@asasd.pl"));
+            Application.Run(new Logowanie());
         }
     }
 }

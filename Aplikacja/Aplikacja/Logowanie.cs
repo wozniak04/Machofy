@@ -20,10 +20,16 @@ namespace Aplikacja
         private void button1_Click(object sender, EventArgs e)
         {
             var pol = new DataAcces();
-            tEmail.Text = BCrypt.Net.BCrypt.HashPassword(tHaslo.Text, 10);
-            MessageBox.Show(tEmail.Text.Length.ToString());
-            
-            //MessageBox.Show(pol.Logowanie(tEmail.Text,tHaslo.Text).ToString());
+            string haslo = BCrypt.Net.BCrypt.HashPassword(tHaslo.Text, 10);
+
+
+            if (pol.Logowanie(tEmail.Text, tHaslo.Text)) 
+            {
+                var okno = new Aplikacja(tEmail.Text);
+                this.Hide();
+                okno.ShowDialog();
+                this.Close();
+            }
             button1.FlatStyle = FlatStyle.Flat;
             button1.FlatAppearance.BorderSize = 0;
         }

@@ -19,7 +19,11 @@ namespace Aplikacja
             SqlDataReader rdr;
             rdr = cmd.ExecuteReader();
             if (rdr.Read())
+            {
+                conn.Close();
                 return false;
+            }
+            conn.Close();
             return true;
 
         }
@@ -37,9 +41,9 @@ namespace Aplikacja
                     cmd.ExecuteNonQuery();
                     conn.Close();
                 }
-                catch
+                catch(Exception e)
                 {
-                    return "błąd w rejestracji";
+                    return e.ToString();
                 }
             }
             else

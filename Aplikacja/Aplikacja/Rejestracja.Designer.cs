@@ -54,7 +54,9 @@ namespace Aplikacja
             // tHaslo1
             // 
             this.tHaslo1.Location = new System.Drawing.Point(129, 187);
+            this.tHaslo1.MaxLength = 60;
             this.tHaslo1.Name = "tHaslo1";
+            this.tHaslo1.PasswordChar = '*';
             this.tHaslo1.Size = new System.Drawing.Size(195, 20);
             this.tHaslo1.TabIndex = 10;
             // 
@@ -85,6 +87,7 @@ namespace Aplikacja
             // tEmail
             // 
             this.tEmail.Location = new System.Drawing.Point(129, 145);
+            this.tEmail.MaxLength = 50;
             this.tEmail.Name = "tEmail";
             this.tEmail.Size = new System.Drawing.Size(195, 20);
             this.tEmail.TabIndex = 7;
@@ -92,7 +95,9 @@ namespace Aplikacja
             // tHaslo2
             // 
             this.tHaslo2.Location = new System.Drawing.Point(129, 228);
+            this.tHaslo2.MaxLength = 60;
             this.tHaslo2.Name = "tHaslo2";
+            this.tHaslo2.PasswordChar = '*';
             this.tHaslo2.Size = new System.Drawing.Size(195, 20);
             this.tHaslo2.TabIndex = 13;
             // 

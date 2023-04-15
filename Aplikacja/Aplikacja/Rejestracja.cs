@@ -25,27 +25,32 @@ namespace Aplikacja
             btnRejestruj.FlatAppearance.BorderSize = 0;
             if (Regex.IsMatch(tEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
             {
-                if (tHaslo1.Text.ToString().Equals(tHaslo2.Text.ToString()))
+                if (Regex.IsMatch(tHaslo1.Text, @".{8,}"))
                 {
-                    var pol = new DataAcces();
-                    string haslo = BCrypt.Net.BCrypt.HashPassword(tHaslo1.Text.ToString());
-                    string dane = pol.Rejestracja(tEmail.Text, haslo);
-                    if (dane=="")
+                    if (tHaslo1.Text.ToString().Equals(tHaslo2.Text.ToString()))
                     {
-                        MessageBox.Show("Zarejestrowano pomyślnie");
-                        var okno = new Aplikacja(tEmail.Text.ToString());
-                        this.Hide();
-                        okno.ShowDialog();
-                        this.Close();
-                    }
-                    else
+                        var pol = new DataAcces();
+                        string haslo = BCrypt.Net.BCrypt.HashPassword(tHaslo1.Text.ToString());
+                        string dane = pol.Rejestracja(tEmail.Text, haslo);
+                        if (dane == "")
+                        {
+                            
+                            var okno = new Aplikacja(tEmail.Text.ToString());
+                            this.Hide();
+                            okno.ShowDialog();
+                            this.Close();
+                        }else
+                        {
+                            MessageBox.Show(dane);
+                        }
+                    }else
                     {
-                        MessageBox.Show(dane);
+                        MessageBox.Show("hasła różnią się");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("hasła różnią się");
+                    MessageBox.Show("hasło powinno zawierać conajmniej 8 znaków");
                 }
             }
             else

@@ -40,6 +40,7 @@ namespace Aplikacja
             // tEmail
             // 
             this.tEmail.Location = new System.Drawing.Point(128, 159);
+            this.tEmail.MaxLength = 50;
             this.tEmail.Name = "tEmail";
             this.tEmail.Size = new System.Drawing.Size(174, 20);
             this.tEmail.TabIndex = 1;
@@ -72,7 +73,9 @@ namespace Aplikacja
             // tHaslo
             // 
             this.tHaslo.Location = new System.Drawing.Point(128, 229);
+            this.tHaslo.MaxLength = 60;
             this.tHaslo.Name = "tHaslo";
+            this.tHaslo.PasswordChar = '*';
             this.tHaslo.Size = new System.Drawing.Size(174, 20);
             this.tHaslo.TabIndex = 4;
             // 
