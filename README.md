@@ -5,6 +5,3 @@ A desktop application built in C# during my technical high school education, des
 
 ## 🛠️ Tech Stack
 * C#
-* .NET
-
-*Note: This is an older, educational project kept on my profile for archival purposes to showcase my early programming journey.*
